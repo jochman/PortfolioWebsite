@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="./portfolioStyle.css">
+
+        <!-- google analytics-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115114147-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-115114147-1');
+        </script>
+        <title>Bar Hochman - Your Next Programmer!</title>
+    </head>
+    <body>
+        <!-- TOP SECTION - FOR GLOBAL SITE -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-round">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/brand/b.svg" width="30" height="30" class="d-inline-block align-top" alt="">ar Hochman</a>
+                <ul class="navbar-nav mr-auto list-inline">
+                    <li class="nav-item-inline active">
+                            <a class="nav-link" href="#">Home<span class="sr-only" (current)</span></a>
+                    </li>
+                    <li class="nav-item-inline">
+                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item-inline dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Web Projects</a>
+                        <div class="dropdown-menu" ria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./project/budgety/index.html">Budgety</a>
+                        </div>
+                    </li>
+                    <li class="nav-item-inline dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Git Projects</a>
+                        <div class="dropdown-menu" ria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://github.com/jochman/ChronoBattle">ChronoBattle</a>
+                            <a class="dropdown-item" href="https://github.com/jochman/CommitteeSystem">CommitteeSystem</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="social nav navbar-nav navbar-right">
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/bar-hochman-48b87829/">
+                        <button class = "social_btn" id="linkedin"><i class="fa fa-linkedin-square fa-2x" alt="LinkedIn profile"></i>
+                            </button></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/jochman">
+                            <button class="social_btn" id="github"><i class="fa fa-git-square fa-2x" alt="GitHub profile"></i></button></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+               <!-- CONTENT\MIDDLE SECTION -->
+        <div class="table_item content" data-aos="fade-right">
+            <div class="title_for_this">Hi there!</div>
+            <div class="paragraphs">
+                    <p>My name is Bar Hochman, a talented student from Holon Institute of Technology who's looking for his first job in the high-tech industry.   </p>
+                    <p>During my studies, I have experienced coding in C and C++ OOP Programming, then I advanced to Java and Android Development.</p>
+                    <p>In addition to my regular study I'm attending Udemy's courses and now (as you can see) can code HTML5, CSS and JavaScript. When programming with JavaScript I'm using DOM API instead of the popular JQuery, but I'm on my way to learn that too.</p>
+                    <p>In my <a class="link" href="portfolio.html">porfolio</a> you can get a touch from my works. From flimsy MFC project that looks like it designed by a 3 years-old monkey to a Java-coded project which introduce me to server design and SQL.</p>
+                    <p>I'm looking for my first job. I'm ambitious, quick-learner, autodidact and can achieve beyond expectations. By expectations I mean "by my own" expectations.</p>
+                    <p>Feel free to wander around the site and project. For HRs and employers - feel free to offer me a job via Linkedin or my mail address.</p>
+                    <div class="bottom_social">
+                        <a href="https://www.linkedin.com/in/bar-hochman-48b87829/">
+                        <button class = "social_btn" id="linkedin"><i class="fa fa-linkedin-square fa-2x" alt="LinkedIn profile"></i>
+                        </button></a>
+                        <a href="https://github.com/jochman">
+                        <button class="social_btn" id="github"><i class="fa fa-git-square fa-2x" alt="GitHub profile"></i></button></a>
+                        <a href="mailto:Bar@BarHochman.com?subject=I have a job offer for you">
+                        <button class="social_btn" id="email"><i class="fa fa-envelope fa-2x" alt="eMail"></i></button></a>
+                    </div>
+            </div>
+        </div>
+        <!-- Script linking-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
+        

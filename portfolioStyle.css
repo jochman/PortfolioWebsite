@@ -1,0 +1,209 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.jpg);
+    background-attachment: fixed;
+    
+    color: #555;
+    font-family: Open Sans;
+    
+    max-width: 45%;
+    margin: auto;
+}
+
+@media only screen and (width : 1024px) and (orientation : landscape) {
+
+    body{
+        max-width: 99%;
+    }
+}
+
+.right { float: right; }
+.red { color: #FF5049 !important; }
+.red-focus:focus { border: 1px solid #FF5049 !important; }
+
+p{
+    font-size: 14px;
+}
+
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+
+/**********************************************
+*** TOP PART
+**********************************************/
+
+.navbar{
+    margin-top: 30px;
+}
+
+.navbar-nav > li > a {padding-top:0px !important; padding-bottom:0px !important;}
+
+.dropdown-menu{
+    width: 10% !important;
+    font-size: 12px;
+}
+.border-round{
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.social{
+    display: inline;
+}
+
+.social_btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.social_btn:focus { outline: none; }
+.social_btn:active { -webkit-transform: translateY(2px); transform: translateY(2px); }
+.social_btn:hover{-webkit-transform: scale(1.3);transform: scale(1.3)}
+
+/**********************************************
+*** CONTENT PART
+**********************************************/
+
+.content{
+    position: relative;
+    margin: 8% 0px;
+    
+    background-color: whitesmoke;
+    -webkit-box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid black; 
+}
+.table_item {
+    text-align: left;
+    text-shadow: 2px 2px 5 #000000;
+    font-size: 20px;
+    margin: 4%;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.item_type{
+    margin-left: 2%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+}
+    
+.item_title{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    text-transform: capitalize; 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.item_description{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+}
+
+ul{
+    font-size: 14px;
+    text-align: left;    
+}
+
+/**********************************************
+*** BOTTOM PART
+**********************************************/
+
+.bottom{
+    position: relative;
+    top:79px;
+    margin-bottom: 40px;
+}
+
+/******************************
+** INDEX DEPENDENT STYLESHEET
+******************************/
+
+.title_for_this{
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.paragraphs{
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.bottom_social{
+    margin-top: 10px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+/**********************************************
+*** keyframes and anim classes
+**********************************************/
+
+.scene{
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+.scene--fadein{
+    animation-name: moveUp;
+}
+
+.scene--fadeFromInside{
+    animation-name: moveIn;
+}
+
+.is-exiting { 
+    animation-direction: alternate-reverse;
+}
+
+@keyframes moveIn{
+         0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0,0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes moveUp{
+      0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
